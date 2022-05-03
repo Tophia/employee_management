@@ -1,0 +1,24 @@
+type GraphQl {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateGraphQlInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateGraphQlInput {
+  id: Int!
+}
+
+type Query {
+  graphQl: [GraphQl]!
+  graphQl(id: Int!): GraphQl
+}
+
+type Mutation {
+  createGraphQl(createGraphQlInput: CreateGraphQlInput!): GraphQl!
+  updateGraphQl(updateGraphQlInput: UpdateGraphQlInput!): GraphQl!
+  removeGraphQl(id: Int!): GraphQl
+}
